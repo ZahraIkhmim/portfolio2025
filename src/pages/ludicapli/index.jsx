@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaBeer } from 'react-icons/fa';
@@ -16,26 +17,24 @@ import EmbedText from '@/components/EmbedText';
 
 import React, { useEffect, useState } from 'react';
 
-import site1 from "../../public/site_ecommerce_final.png";
-import site2 from "../../public/site_cloud_final.png";
-import site3 from "../../public/site_bank_final.png";
-import site4 from "../../public/site_ludicapli_final.png";
-import site5 from "../../public/site_cineapp_final.png";
+import site1 from "../../../public/site_ecommerce_final.png";
+import site2 from "../../../public/site_cloud_final.png";
+import site3 from "../../../public/site_bank_final.png";
+import site4 from "../../../public/site_ludicapli_final.png";
+import site5 from "../../../public/site_cineapp_final.png";
 
-import moi from "../../public/moi1.png"
+import moi from "../../../public/moi1.png"
 
 const langFR = {
   aboutLines: {
-    discover: "découvrez mon projet !",
+    discover: "découvre qui je suis",
     hello: "Bonjour, je m'appelle Rémi !",
-    studiesBegin: "J'ai obtenu ma licence à ",
-    studiesEmbed: "l'Université de Lille",
-    studiesEnd: "et développe mes projets depuis.",
-    passion: "Je suis un passionné des technologies numériques et de la création de jeux.",
-    qualityBegin: "Mes ",
-    qualityEmbed: "meilleures qualités",
-    qualityEnd: "sont: ",
-    qualityUnderlined : "l'autonomie, la créativité et la curiosité.",
+    studiesBegin: " J'ai pour passion la création de jeux vidéos et d'applications, et c'est pourquoi je me lance dans ce projet de création ",
+    studiesEmbed: "d'applications ludiques",
+    studiesEnd: " pour les enfants, pour pouvoir soutenir via des",
+    studiesUnderlined : "supports numériques visuels",
+    studieseEnding: " les enfants en difficulté et/ou en situation de handicap.",
+    
     projectButton: "UN PROJET ?",
     projectHeaderBegin: "Voici ",
     projectHeaderEmbed: "quelques projets",
@@ -44,9 +43,9 @@ const langFR = {
     compsHeaderEmbed: "compétences",
     compsHeaderEnd: ":",
     talkButton: "Envie de papoter ?",
-    navAbout: "a propos",
-    navProject: "projets",
-    navComps: "Compétences",
+    navAbout: "présentation",
+    navProject: "l'équipe",
+    navComps: "projets", 
     navLang: "fr",
   },
   techColors: [
@@ -720,8 +719,8 @@ export default function Home() {
         <div className="bg-[url('/borderdash.svg')] w-[95%] md:w-[100%] mx-auto my-2 md:m-2.5 md:ml-12 p-6 md:p-12 pt-8 flex flex-col z-10 bg-zinc-950/70 md:bg-zinc-950/10">
           <div className='flex flex-col font-stretch'>
             <div className='flex flex-row items-center'>
-                <Link href='/ludicapli'>
-                  <div className='heartbeat font-tb pt-4 font-black text-[10vw] md:text-[4.6vw] uppercase fade-main-color inline-block text-transparent bg-clip-text w-fit max-h-32 cursor-pointer'>rémi</div>
+                <Link href='/'>
+                  <div className='heartbeat font-tb pt-4 font-black text-[10vw] md:text-[4.6vw] uppercase fade-main-color-ludicapli inline-block text-transparent bg-clip-text w-fit max-h-32 cursor-pointer'>ludicapli</div>
                 </Link>
                 <div className='mt-5 ml-12 shake-horizontal flex flex-row items-center cursor-pointer'>
                   <IoMdArrowRoundBack className='mr-2 font-tr'/>
@@ -730,9 +729,9 @@ export default function Home() {
                 </div>
             </div>
             <div className='font-tb mb-4 font-outline-2 leading-[0.80] text-zinc-950 text-[10vw] md:text-[4.6vw] uppercase overflow-hidden pt-1 mt-0b border-0 border-b-2 border-zinc-600 w-fit'>
-              front end
+              applications
               <br />
-              developpeur
+              ludiques & inclusives
             </div>
           </div>
           <div className='mainsection text-gray-300 font-tr max-w-full lg:w-[60%] h-full mt-2 scroll-smooth overflow-y-scroll no-scrollbar'>
@@ -749,18 +748,19 @@ export default function Home() {
                 </div>
                 <div className='text-normal md:text-2xl font-medium leading-8'>
                   <div className='mb-5 leading-relaxed'> 
-                    <EmbedText textBegin={langLines.aboutLines.studiesBegin} textEmbed={langLines.aboutLines.studiesEmbed} textEnd={langLines.aboutLines.studiesEnd} textUnderlined={null}/>
-                  </div>
-
-                  <div className='mb-5 leading-relaxed'>
-                    {langLines.aboutLines.passion}
-                  </div>
-                  <div className='mb-5 leading-relaxed'>
-                    <EmbedText textBegin={langLines.aboutLines.qualityBegin} textEmbed={langLines.aboutLines.qualityEmbed} textEnd={langLines.aboutLines.qualityEnd} textUnderlined={langLines.aboutLines.qualityUnderlined}/>
+                    {langLines.aboutLines.studiesBegin}
+                    <span className='shifted-border-ludicapli'>
+                      {langLines.aboutLines.studiesEmbed}
+                    </span>
+                    {langLines.aboutLines.studiesEnd}
+                    <span className='relative whitespace-nowrap px-2 before:border-2 before:border-solid before:-rotate-1 before:w-full before:absolute before:left-0 before:top-0 before:h-6 before:md:h-8 before:border-main-color-ludicapli before:border-t-black/0 before:border-l-black/0 before:border-r-black/0'>
+                      {langLines.aboutLines.studiesUnderlined}
+                    </span>
+                    {langLines.aboutLines.studieseEnding}
                   </div>
                 </div>
                 <div className='flex justify-center md:justify-end p-10'>
-                  <a href="mailto:ludicapli@gmail.com" className='group ease-out duration-300 hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
+                  <a href="mailto:ludicapli@gmail.com" className='group ease-out duration-300 hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color-ludicapli uppercase tracking-wider overflow-hidden'>
                     <div className='rounded-full bg-white/20 w-fit p-1 mr-4'>
                       <PiPaperPlaneTiltFill className='font-medium text-xl ease-out duration-300 group-hover:rotate-45'/>  
                     </div>
@@ -867,7 +867,7 @@ export default function Home() {
               </div>
 
               <div className='flex justify-center md:justify-end p-10 '>
-                  <a href="mailto:ludicapli@gmail.com" className='group ease-out hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] duration-300 hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
+                  <a href="mailto:ludicapli@gmail.com" className='group ease-out hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] duration-300 hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color-ludicapli uppercase tracking-wider overflow-hidden'>
                     <div className='rounded-full bg-white/20 w-fit p-1 mr-4'>
                       <PiPaperPlaneTiltFill className='font-medium text-xl ease-out duration-300 group-hover:rotate-45'/>  
                     </div>
@@ -887,21 +887,21 @@ export default function Home() {
           <ul className='flex flex-col justify-between w-auto mb-10 h-full '>
             <li className='mb-5 border-b-2 border-gray-400/50 pb-5'>
               <a href="#about" className='flex items-center w-fit uppercase'>
-                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color nav-link ${activeLink == "about" ? "active-nav" : ""}`}>{langLines.aboutLines.navAbout}</span>
+                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color-ludicapli nav-link ${activeLink == "about" ? "active-nav-ludicapli" : ""}`}>{langLines.aboutLines.navAbout}</span>
               </a>
             </li>
             <li className='mb-5 border-b-2 border-gray-400/50 pb-5'>
               <a href="#projects" className='flex items-center w-fit uppercase'>
-                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color nav-link ${activeLink == "projects" ? "active-nav" : ""}`}>{langLines.aboutLines.navProject}</span>
+                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color-ludicapli nav-link ${activeLink == "projects" ? "active-nav-ludicapli" : ""}`}>{langLines.aboutLines.navProject}</span>
               </a>
             </li>            
             <li className='mb-5 border-b-2 border-gray-400/50 pb-5'>
               <a href="#comps" className='flex items-center w-fit uppercase'>
-                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color nav-link ${activeLink == "comps" ? "active-nav" : ""}`}>{langLines.aboutLines.navComps}</span>
+                <span className={`select-none vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color-ludicapli nav-link ${activeLink == "comps" ? "active-nav-ludicapli" : ""}`}>{langLines.aboutLines.navComps}</span>
               </a>
             </li>            
           </ul>
-          <div className='vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color select-none mb-4 uppercase' onClick={() => changeLang()}>
+          <div className='vertical-writing rotate-180 cursor-pointer hover:border-l-2 border-main-color-ludicapli select-none mb-4 uppercase' onClick={() => changeLang()}>
             {langLines.aboutLines.navLang}
           </div>
         </nav>
