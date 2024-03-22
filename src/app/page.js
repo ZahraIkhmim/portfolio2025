@@ -9,7 +9,7 @@ import { IoLogoJavascript } from "react-icons/io5"
 import { IoIosArrowDown, IoMdArrowRoundBack } from "react-icons/io"
 import { BiLogoTailwindCss,  } from "react-icons/bi"
 import { TbBrandNextjs, TbBrandCSharp } from "react-icons/tb"
-import { SiCplusplus, SiBlueprint, SiPython, SiSanity, SiStripe, SiPhp, SiPostgresql, SiAdobephotoshop, SiBlender, SiObsstudio, SiOpenai } from "react-icons/si"
+import { SiPowerbi, SiCplusplus, SiBlueprint, SiPython, SiSanity, SiStripe, SiPhp, SiPostgresql, SiAdobephotoshop, SiBlender, SiObsstudio, SiOpenai, SiTrello } from "react-icons/si"
 import TailwindColor from "@videsk/tailwind-random-color"
 
 import EmbedText from '@/components/EmbedText';
@@ -27,24 +27,24 @@ import moi from "../../public/moi1.png"
 const langFR = {
   aboutLines: {
     discover: "découvrez mon projet !",
-    hello: "Bonjour, je m'appelle Rémi !",
-    studiesBegin: "J'ai obtenu ma licence à ",
-    studiesEmbed: "l'Université de Lille",
+    hello: "Bonjour, je m'appelle Zahra !",
+    studiesBegin: "J'ai obtenu mon BUT à ",
+    studiesEmbed: "l'IUT d'Amiens",
     studiesEnd: "et développe mes projets depuis.",
-    passion: "Je suis un passionné des technologies numériques et de la création de jeux.",
+    passion: "Je suis une passionnée des technologies numériques et de la création de jeux.",
     qualityBegin: "Mes ",
     qualityEmbed: "meilleures qualités",
     qualityEnd: "sont: ",
     qualityUnderlined : "l'autonomie, la créativité et la curiosité.",
-    projectButton: "UN PROJET ?",
+    projectButton: "Découvrez mon CV",
     projectHeaderBegin: "Voici ",
     projectHeaderEmbed: "quelques projets",
     projectHeaderEnd: "que j'ai pu réaliser :",
     compsHeaderBegin: "Au fil des années d'études et des projets, j'ai développé diverses ",
     compsHeaderEmbed: "compétences",
     compsHeaderEnd: ":",
-    talkButton: "Envie de papoter ?",
-    navAbout: "a propos",
+    talkButton: " Découvrez mon CV",
+    navAbout: "à propos",
     navProject: "projets",
     navComps: "Compétences",
     navLang: "fr",
@@ -72,11 +72,6 @@ const langFR = {
       color: "compBlue",
       icon: <FaCss3Alt />,
       name: "CSS"
-    },
-    {
-      color: "compYellow",
-      icon: <IoLogoJavascript />,
-      name: "Javascript"
     },
     {
       color: "compSkyBlue",
@@ -113,6 +108,11 @@ const langFR = {
   ],
   competencesObjets: [
     {
+      color: "compJava",
+      icon: <FaJava />,
+      name: "Java"
+    },
+    {
       color: "compCplus",
       icon: <SiCplusplus />,
       name: "C++"
@@ -132,17 +132,17 @@ const langFR = {
       icon: <TbBrandCSharp />,
       name: "C#"
     },
-    {
-      color: "compJava",
-      icon: <FaJava />,
-      name: "Java"
-    },
   ],
   competencesAutre: [
     {
       color: "compFigma",
       icon: <FaFigma />,
       name: "Figma"
+    },
+    {
+      color: "compPy",
+      icon: <SiPowerbi />,
+      name: "Power BI"
     },
     {
       color: "compUnity",
@@ -165,14 +165,9 @@ const langFR = {
       name: "Blender"
     },
     {
-      color: "compObs",
-      icon: <SiObsstudio />,
-      name: "OBS"
-    },
-    {
-      color: "compGpt",
-      icon: <SiOpenai />,
-      name: "ChatGPT"
+      color: "compLightBlue",
+      icon: <SiTrello />,
+      name: "Trello"
     },
   
   ],
@@ -198,15 +193,6 @@ const langFR = {
   
   ],
   sites: [
-    {
-      name: "Ludicapli",
-      link: "https://www.ludicapli.com/",
-      description: "C'est le site où je poste mes applications ! Il a été fait en utilisant le CMS de Google. La plupart des applications sont faites en Javascript ou C# avec Unity.",
-      image: site4,
-      tech: ["GoogleCMS", 
-              "HTML/CSS",
-              "Javascript"]
-    },
     {
       name: "MyCineApp",
       link: "https://mycineapp.vercel.app/home",
@@ -250,23 +236,23 @@ const langFR = {
 const langEN = {
   aboutLines: {
     discover: "discover my project !",
-    hello: "Hello I'm Rémi !",
+    hello: "Hello I'm Zahra !",
     studiesBegin: "I am a graduate from ",
-    studiesEmbed: "Lille's University, ",
+    studiesEmbed: "Amiens' University, ",
     studiesEnd: "and I now develop my own projects",
     passion: "I am keen on new technologies and game creation.",
     qualityBegin: "My ",
     qualityEmbed: "best qualities ",
     qualityEnd: "are: ",
-    qualityUnderlined : "independaence, creativity and curiosity.",
-    projectButton: "A PROJECT ?",
+    qualityUnderlined : "creativity, curiosity and autonomy.",
+    projectButton: "A RESUME ?",
     projectHeaderBegin: "Here are ",
     projectHeaderEmbed: "somes projects",
     projectHeaderEnd: " i made :",
     compsHeaderBegin: "Throughout the years, I have developed various",
     compsHeaderEmbed: "skills",
     compsHeaderEnd: ":",
-    talkButton: "Want to talk ?",
+    talkButton: "A resume ?",
     navAbout: "about",
     navProject: "projects",
     navComps: "skills",
@@ -295,11 +281,6 @@ const langEN = {
       color: "compBlue",
       icon: <FaCss3Alt />,
       name: "CSS"
-    },
-    {
-      color: "compYellow",
-      icon: <IoLogoJavascript />,
-      name: "Javascript"
     },
     {
       color: "compSkyBlue",
@@ -336,6 +317,11 @@ const langEN = {
   ],
   competencesObjets: [
     {
+      color: "compJava",
+      icon: <FaJava />,
+      name: "Java"
+    },
+    {
       color: "compCplus",
       icon: <SiCplusplus />,
       name: "C++"
@@ -355,17 +341,17 @@ const langEN = {
       icon: <TbBrandCSharp />,
       name: "C#"
     },
-    {
-      color: "compJava",
-      icon: <FaJava />,
-      name: "Java"
-    },
   ],
   competencesAutre: [
     {
       color: "compFigma",
       icon: <FaFigma />,
       name: "Figma"
+    },
+    {
+      color: "compPy",
+      icon: <SiPowerbi />,
+      name: "Power BI"
     },
     {
       color: "compUnity",
@@ -388,14 +374,9 @@ const langEN = {
       name: "Blender"
     },
     {
-      color: "compObs",
-      icon: <SiObsstudio />,
-      name: "OBS"
-    },
-    {
-      color: "compGpt",
-      icon: <SiOpenai />,
-      name: "ChatGPT"
+      color: "compLightBlue",
+      icon: <SiTrello />,
+      name: "Trello"
     },
   
   ],
@@ -421,15 +402,6 @@ const langEN = {
   
   ],
   sites: [
-    {
-      name: "Ludicapli",
-      link: "https://www.ludicapli.com/",
-      description: "This is the site where I post my applications! It was made using Google CMS. Most applications are made in Javascript or C# with Unity.",
-      image: site4,
-      tech: ["GoogleCMS", 
-              "HTML/CSS",
-              "Javascript"]
-    },
     {
       name: "MyCineApp",
       link: "https://mycineapp.vercel.app/home",
@@ -588,15 +560,11 @@ const competencesAutre = [
     name: "Blender"
   },
   {
-    color: "compObs",
-    icon: <SiObsstudio />,
-    name: "OBS"
+    color: "compLightBlue",
+    icon: <SiTrello />,
+    name: "Trello"
   },
-  {
-    color: "compGpt",
-    icon: <SiOpenai />,
-    name: "ChatGPT"
-  },
+  
 
 ]
 
@@ -625,15 +593,6 @@ const competencesMobile = [
 
 
 const sites = [
-  {
-    name: "Ludicapli",
-    link: "https://www.ludicapli.com/",
-    description: "The website where i post my web apps",
-    image: site4,
-    tech: ["GoogleCMS", 
-            "HTML/CSS",
-            "Javascript"]
-  },
   {
     name: "MyCineApp",
     link: "https://mycineapp.vercel.app/home",
@@ -720,19 +679,14 @@ export default function Home() {
         <div className="bg-[url('/borderdash.svg')] w-[95%] md:w-[100%] mx-auto my-2 md:m-2.5 md:ml-12 p-6 md:p-12 pt-8 flex flex-col z-10 bg-zinc-950/70 md:bg-zinc-950/10">
           <div className='flex flex-col font-stretch'>
             <div className='flex flex-row items-center'>
-                <Link href='/ludicapli'>
-                  <div className='heartbeat font-tb pt-4 font-black text-[10vw] md:text-[4.6vw] uppercase fade-main-color inline-block text-transparent bg-clip-text w-fit max-h-32 cursor-pointer'>rémi</div>
+                <Link href='/'>
+                  <div className='heartbeat font-tb pt-4 font-black text-[10vw] md:text-[4.6vw] uppercase fade-main-color inline-block text-transparent bg-clip-text w-fit max-h-32 cursor-pointer'>Zahra</div>
                 </Link>
-                <div className='mt-5 ml-12 shake-horizontal flex flex-row items-center cursor-pointer'>
-                  <IoMdArrowRoundBack className='mr-2 font-tr'/>
-                  {langLines.aboutLines.discover}
-                  
-                </div>
             </div>
             <div className='font-tb mb-4 font-outline-2 leading-[0.80] text-zinc-950 text-[10vw] md:text-[4.6vw] uppercase overflow-hidden pt-1 mt-0b border-0 border-b-2 border-zinc-600 w-fit'>
-              front end
+              web
               <br />
-              developpeur
+              developpeuse
             </div>
           </div>
           <div className='mainsection text-gray-300 font-tr max-w-full lg:w-[60%] h-full mt-2 scroll-smooth overflow-y-scroll no-scrollbar'>
@@ -745,7 +699,7 @@ export default function Home() {
                 </div>
                 <div className='text-xs italic mb-8 font-light'>
                   
-                  Développeur Front-end
+                  Développeuse web
                 </div>
                 <div className='text-normal md:text-2xl font-medium leading-8'>
                   <div className='mb-5 leading-relaxed'> 
@@ -760,7 +714,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='flex justify-center md:justify-end p-10'>
-                  <a href="mailto:ludicapli@gmail.com" className='group ease-out duration-300 hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
+                  <a onClick={() => openInNewTab("./cv")} className='group ease-out duration-300 hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
                     <div className='rounded-full bg-white/20 w-fit p-1 mr-4'>
                       <PiPaperPlaneTiltFill className='font-medium text-xl ease-out duration-300 group-hover:rotate-45'/>  
                     </div>
@@ -867,7 +821,7 @@ export default function Home() {
               </div>
 
               <div className='flex justify-center md:justify-end p-10 '>
-                  <a href="mailto:ludicapli@gmail.com" className='group ease-out hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] duration-300 hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
+                  <a onClick={() => openInNewTab("./cv")} className='group ease-out hover:shadow-[0_30px_15px_-15px_rgba(0,0,0,0.8)] duration-300 hover:-translate-y-2 relative flex justify-center items-center w-fit px-5 py-3 border-0 rounded-lg fade-main-color uppercase tracking-wider overflow-hidden'>
                     <div className='rounded-full bg-white/20 w-fit p-1 mr-4'>
                       <PiPaperPlaneTiltFill className='font-medium text-xl ease-out duration-300 group-hover:rotate-45'/>  
                     </div>
