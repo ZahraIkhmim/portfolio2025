@@ -204,7 +204,7 @@ const langFR = {
     },
     {
       name: "Sound Stripe",
-      link: "https://remi-ober-ecommerce-site.vercel.app/",
+      link: "https://zahra-ecommerce-site.vercel.app/",
       description: "Un site d'e-commerce entièrement fonctionnel avec la gestion de la base de données faite avec Sanity et la méthode de paiement effectuée en utilisant Stripe.",
       image: site1,
       tech: ["Nextjs", 
@@ -213,7 +213,7 @@ const langFR = {
     },
     {
       name: "Odito",
-      link: "https://remi-ober-webservice.vercel.app/",
+      link: "https://zahra-cloud-site.vercel.app/",
       description: "Un site vitrine pour une agence fictive de services sur le cloud. Ce site avait pour but de me familiariser avec React et Tailwind pour la mise en page et la gestion des composants.",
       image: site2,
       tech: ["React", 
@@ -222,7 +222,7 @@ const langFR = {
     },
     {
       name: "HooBank",
-      link: "https://remi-ober-banksite.vercel.app/",
+      link: "https://zahra-bank-site.vercel.app/",
       description: "Un site vitrine pour une banque en ligne fictive. Ce site avait pour but de me familiariser avec React et Tailwind pour la mise en page et la gestion des composants.",
       image: site3,
       tech: ["React", 
