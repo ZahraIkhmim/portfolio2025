@@ -19,7 +19,6 @@ import React, { useEffect, useState } from 'react';
 import site1 from "../../public/site_ecommerce_final.png";
 import site2 from "../../public/site_cloud_final.png";
 import site3 from "../../public/site_bank_final.png";
-import site4 from "../../public/site_ludicapli_final.png";
 import site5 from "../../public/site_cineapp_final.png";
 
 import moi from "../../public/moi1.png"
@@ -30,7 +29,7 @@ const langFR = {
     hello: "Bonjour, je m'appelle Zahra !",
     studiesBegin: "J'ai obtenu mon BUT à ",
     studiesEmbed: "l'IUT d'Amiens",
-    studiesEnd: "et développe mes projets depuis.",
+    studiesEnd: "et développe mes projets tout en travaillant pour mon master à l'université Paris 8.",
     passion: "Je suis une passionnée des technologies numériques et de la création de jeux.",
     qualityBegin: "Mes ",
     qualityEmbed: "meilleures qualités",
@@ -239,7 +238,7 @@ const langEN = {
     hello: "Hello I'm Zahra !",
     studiesBegin: "I am a graduate from ",
     studiesEmbed: "Amiens' University, ",
-    studiesEnd: "and I now develop my own projects",
+    studiesEnd: "and I now develop my own projects while working on my master degree at Paris 8 university.",
     passion: "I am keen on new technologies and game creation.",
     qualityBegin: "My ",
     qualityEmbed: "best qualities ",

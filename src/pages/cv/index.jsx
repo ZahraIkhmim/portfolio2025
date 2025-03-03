@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import cv from "../../../public/cv.png";
+import cv from "../../../public/cv_zahra.png";
 import {useState} from "react";
 
 
